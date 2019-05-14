@@ -5,6 +5,7 @@
   "main": "hello-node.js",
   "dependencies": {
     "express": "^4.16.4",
+    "js-base64": "^2.5.1",
     "node-sass": "^4.11.0",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
