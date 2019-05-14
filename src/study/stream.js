@@ -45,6 +45,8 @@ myReadStream.on('end', () => {
 
 /**
  * 以下是管道内容
+ * myReadStream读取流读取内容
+ * myWriteStream写入流通过管道写入内容
  **/
 
 myReadStream.pipe(myWriteStream)
