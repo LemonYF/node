@@ -1,9 +1,10 @@
-function route(pathname, handle, response) {
+function route(pathname, handle, response, params) {
     if (typeof handle[pathname] === 'function') {
         console.log('handle', pathname)
-        handle[pathname](response)
+        handle[pathname](response, params)
     } else {
-        console.log('pathname no path')
+        // 这里处理404
+        handle['/other'](response, params)
     }
 
 }

@@ -5,6 +5,7 @@ let handler = require('./handler')
 let handle = {}
 handle['/'] = handler.home
 handle['/homepage'] = handler.home
+handle['/other'] = handler.other
 
 console.log(handle)
 
